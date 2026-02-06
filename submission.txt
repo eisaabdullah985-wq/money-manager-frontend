@@ -5,7 +5,7 @@ Frontend Deployment URL:
 https://spender-manager.netlify.app
 
 Last Commit Hash (Frontend):
-abc123frontendhash
+5f324f2
 
 
 Backend GitHub Repository:
@@ -15,4 +15,4 @@ Backend Deployment URL:
 https://money-manager-backend-l19d.onrender.com
 
 Last Commit Hash (Backend):
-xyz789backendhash
+c16d196
