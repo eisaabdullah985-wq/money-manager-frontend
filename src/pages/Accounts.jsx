@@ -13,12 +13,12 @@ const Accounts = () => {
   const [showAddAccount, setShowAddAccount] = useState(false);
 
   const fetchAccounts = async () => {
-    const res = await axios.get("/accounts");
+    const res = await axios.get("/api/accounts");
     setAccounts(res.data?.data || []);
   };
 
   const fetchSummary = async () => {
-    const res = await axios.get("/accounts/summary");
+    const res = await axios.get("/api/accounts/summary");
     setNetWorth(res.data?.data?.totalNetWorth || 0);
   };
 
