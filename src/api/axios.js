@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api', // Your backend URL
+    baseURL: 'https://money-manager-backend-l19d.onrender.com', // Your backend URL
 });
 
 // Automatically add the JWT token to headers if it exists
