@@ -40,7 +40,7 @@ const Accounts = () => {
     }
 
     try {
-      await axios.delete(`/accounts/${accountId}`);
+      await axios.delete(`/api/accounts/${accountId}`);
       
       // Optimistic Update: Remove from UI immediately
       setAccounts(accounts.filter(acc => acc._id !== accountId));
@@ -56,7 +56,7 @@ const Accounts = () => {
 
   const handleUpdateNode = async (accountId, updatedData) => {
     try {
-      const res = await axios.put(`/accounts/${accountId}`, updatedData);
+      const res = await axios.put(`/api/accounts/${accountId}`, updatedData);
       if (res.data.success) {
         // Update local state so UI reflects changes immediately
         setAccounts(accounts.map(acc => acc._id === accountId ? res.data.data : acc));
